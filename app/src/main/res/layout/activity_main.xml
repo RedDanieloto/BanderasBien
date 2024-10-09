@@ -6,20 +6,31 @@
     android:gravity="center"
     android:padding="16dp">
 
-    <!-- Bandera de México -->
+    <!-- Bandera de México con línea amarilla en el centro del verde -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
 
-        <!-- Verde -->
-        <View
+        <!-- Verde con línea amarilla en el centro -->
+        <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#006847" />
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#006847" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF00"
+                android:layout_gravity="center"/>
+        </FrameLayout>
 
         <!-- Blanco -->
         <View
@@ -36,13 +47,13 @@
             android:background="#CE1126" />
     </LinearLayout>
 
-    <!-- Bandera de Francia -->
+    <!-- Bandera de Francia con línea amarilla en el centro del blanco -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
 
         <!-- Azul -->
         <View
@@ -51,12 +62,23 @@
             android:layout_weight="1"
             android:background="#002395" />
 
-        <!-- Blanco -->
-        <View
+        <!-- Blanco con línea amarilla en el centro -->
+        <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#FFFFFF" />
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF00"
+                android:layout_gravity="center"/>
+        </FrameLayout>
 
         <!-- Rojo -->
         <View
@@ -66,7 +88,7 @@
             android:background="#ED2939" />
     </LinearLayout>
 
-    <!-- Bandera de Bélgica -->
+    <!-- Bandera de Bélgica con línea amarilla en el centro del rojo -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -87,12 +109,24 @@
             android:layout_weight="1"
             android:background="#FFD700" />
 
-        <!-- Rojo -->
-        <View
+        <!-- Rojo con línea amarilla en el centro -->
+        <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#FF0000" />
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF0000" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF00"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
     </LinearLayout>
 
 </LinearLayout>
